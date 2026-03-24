@@ -7,7 +7,8 @@
     <title>Caelum Lab - Física</title>
 
     <link rel="stylesheet" href="style.css">
-
+    
+    <script src="mathconfig.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
@@ -39,13 +40,16 @@
                 <hr>
                 <li><a href="#atmosfera">Atmosferas</a></li>
                 <hr>
+                <li><a href="#balistica-e-trajetorias">Balística e Trajetórias</a></li>
+                <hr>
                 <li><a href="#relatividade-especial">Relatividade especial (restrita)</a></li>
                 <hr>
                 <li><a href="#relatividade-geral">Relatividade geral</a></li>
                 <hr>
+                <li><a href="#dilatacao-temporal">Dilatação Temporal</a></li>
+                <hr>
                 <li><a href="#buracos-negros">Buracos negros</a></li>
                 <hr>
-                <li><a href="#balistica-e-trajetorias">Balística e Trajetórias</a></li>
             </ul>
         </nav>
 
@@ -60,8 +64,9 @@
                 </ul>
                 <p>A gravitação é a força de atração que age entre todos os corpos com massa. Segundo a Lei da Gravitação Universal de 
                     <a href="https://pt.wikipedia.org/wiki/Isaac_Newton" target="__blank" class="cc">Isaac Newton</a>, 
-                    essa força é diretamente proporcional ao produto das massas e é inversamente proporcional ao quadrado da distância entre elas.<br>
-                    É ela que mantém a Lua em órbita e impede que a atmosfera terrestre escape para o vácuo.
+                    que mostrou que qualquer objeto no universo atrai outro com uma força proporcional às suas massas e 
+                    inversamente proporcional ao quadrado da distância entre eles.<br>Essa lei explica desde a queda de 
+                    objetos na Terra até o movimento de planetas ao redor de estrelas.
                 </p>
                 <ul>
                     <li><strong>Curiosidade:</strong></li>
@@ -75,9 +80,10 @@
                     <li id="orbitas"><strong>Órbitas:</strong> O equilíbio da Queda Livre</li>
                 </ul>
                 <p>
-                    Uma órbita ocorre quando um objeto possui uma velocidade horizontal sufciente para que, ao cair em direção ao corpo central, 
-                    a curvatura da queda acompanhe a curvatura do corpo abaixo. Assim, o objeto "cai" continuamente ao redor do corpo central, 
-                    criando uma trajetória fechada. A velocidade necessária para manter uma órbita depende da altitude e da massa do corpo central.
+                    Uma órbita ocorre quando um objeto se move ao redor de outro devido à gravidade, sem colidir com ele. Isso acontece porque 
+                    há um equilíbrio entre a velocidade do objeto e a atração gravitacional.<br>Se a velocidade do objeto for adequada, ele "cai" 
+                    continuamente ao redor do corpo central, criando uma trajetória fechada.<br>Essa é a velocidade orbital para uma órbia circular.
+                    <br>ela mostra que quanto maior for a massa do corpo central, maior será a velocidade necessária.
                 </p>
                 <ul>
                     <li><strong>Órbita Circular:</strong> Possui velocidade constante e altitude fixa.</li>
@@ -90,94 +96,96 @@
                     <li id="foguetes"><strong>Mecânica de foguetes:</strong> Ação e reação</li>
                 </ul>
                 <p>
-                    Baseada na Terceira Lei de Newton, a propulsão de um foguete não depende de um meio externo, como "empurrar o ar", mas sim da conservação
-                    do momento linear. Ao expelir massa (gases de exaustão do propelente) em alta veloxidade para trás, o foguete recebe um impulso equivalente para frente. 
-                    A eficiência do foguete é medida pelo impulso específico (Isp), que indica quanto impulso é gerado por unidade de massa de propelente consumida. O TWR 
-                    (Thrust-to-Weight Ratio) é a relação entre a força de empuxo do foguete e seu peso, indicando sua razão de empuxo/peso em relação a gravidade de um corpo.
+                    A mecânica de foguetes descreve como veículos espaciais se movem no espaço, utilizando o princípio da ação e reação.<br>
+                    Ao expelir o propelente misturado em alta velocidade para trás, o foguete ganha impulso para frente.<br>
+                    A Equação do Foguete Ideal (Equação de <a href="https://pt.wikipedia.org/wiki/Konstantin_Tsiolkovski" class="cc">Tsiolkovsky</a>) 
+                    mostra que a eficiência do foguete depende da quantidade de combustível e da eficiência do motor.
                 </p>
                 <ul>
                     <li id="atmosfera"><strong>Atmosferas:</strong> O desafio do arrasto e calor</li>
                 </ul>
-                <p>A atmosfera é um fluido denso que oferece resistência ao movimento (arrasto) e gera calor com o atrito. Para a exploração espacial, 
-                    ela apresenta dois desafios principais: o arrasto, que éa força que se opõe ao movimento do foguere, fazendo mais energia ser necessária para o lançamento, 
-                    e o aquecimento por atrito, especialmente na reentrada, que ao retornar do espaço, a compressão do ar à frente da nave gera atrito, e atrito gera calor, 
-                    transformando energia cinética em térmica. É necessário um escudo de calor para sobreviver a esse processo.
+                <p>
+                    Atmosferas são camadas de gases que envolvem planetas e outros corpos celestes.<br>Elas influenciam diretamente o movimento de 
+                    objetos, causando arrasto, aquecimento por atrito e desaceleração.<br>Diferente do espaço, onde o movimento segue leis mais simples, 
+                    dentro da atmosfera é necessário considerar forças adicionais, o que torna os cálculos mais complexos.
                 </p>
                 <hr>
                 <ul>
                     <li id="balistica-e-trajetorias"><strong>Balística e Trajetórias</strong></li>
                 </ul>
-                <p>Estuda o movimento de corpos lançados ao espaço sob influência exclusiva da gravidade e da resistência do ar. No espaço, uma vez que o motor é desligado, 
-                    o objeto segue uma cônica (círculo, epípse, parábola ou hipérbole) determinada pela sua energia total. A trajetória é influenciada por fatores como a 
-                    velocidade de lançamento, o ângulo de lançamento, a altitude e a presença de corpos celestes próximos.
+                <p>
+                    A balística estuda o movimento de objetos lançados, como projéteis ou foguetes em fases iniciais.<br>Sem resistência do 
+                    ar, a trajetória é uma parábola, onde <strong>0</strong> é o ângulo de lançamento, <strong>v</strong> é a velocidade 
+                    inicial e <strong>g</strong> é a gravidade.<br>Na prática, fatores como o ar e a rotação do planeta podem alterar 
+                    essa trajetória.
                 </p>
                 <hr>
             </div>
             <!-- Cálculos e Fórmulas -->
             <div class="subsecao">
                 <h4>Cálculos e Fórmulas</h4>
-                <p><strong>Força Gravitacional:<br></strong> $$ F = G \frac{m_1 m_2}{r^2} $$</p>
-                <p><strong>Velocidade orbital:<br></strong> $$ v = \sqrt{\frac{GM}{r}} $$</p>
-                <p><strong>Delta-v (∆v):<br></strong> $$ \Delta v = I_{sp} \cdot g_0 \cdot \ln \left(\frac{m_0}{m_f}\right) $$</p>
+                <p><strong>Força Gravitacional:<br></strong> \[ F = G \frac{m_1 m_2}{r^2} \]</p>
+                <p><strong>Velocidade orbital:<br></strong> \[ v = \sqrt{\frac{GM}{r}} \]</p>
+                <p><strong>Delta-v (∆v):<br></strong> \[ \Delta v = I_{sp} \cdot g_0 \cdot \ln \left(\frac{m_0}{m_f}\right) \]</p>
             </div>
             <!-- Glossário -->
-            <div p class="explicacao">
+            <div class="explicacao">
                 <h3>Glossário</h3>
                 <p>
-                    <strong>F</strong>: é a força gravitacional entre dois corpos com massa, medido em <strong>Newton (N)</strong>
+                    <strong>\(F\)</strong>: é a força gravitacional entre dois corpos com massa, medido em <strong>Newton</strong> \([N\)
                 </p>
 
                 <p>
-                    <strong>m₁</strong>: Massa do primeiro corpo
+                    <strong>\(m_1\)</strong>: Massa do primeiro corpo
                 </p>
 
                 <p>
-                    <strong>m₂</strong>: Massa do segundo corpo
+                    <strong>\(m_2\)</strong>: Massa do segundo corpo
                 </p>
 
                 <p>
-                    <strong>r</strong>: Distância entre os centros dos corpos, medida em <strong>metros (m)</strong>
+                    <strong>\(r\)</strong>: Distância entre os centros dos corpos, medida em <strong>metros (m)</strong>
                 </p>
 
                 <p>
-                    <strong>v</strong>: Velocidade orbital do objeto <strong>(m/s)</strong>
+                    <strong>\(v\)</strong>: Velocidade orbital do objeto <strong>(m/s)</strong>
                 </p>
 
                 <p>
-                    <strong>G</strong>: Constante gravitacional universal, aproximadamente 6.674 × 10⁻¹¹ N⋅m²/kg²
+                    <strong>\(G\)</strong>: Constante gravitacional universal, aproximadamente 6.674 × 10⁻¹¹ \(N\)⋅m²/kg²
                 </p>
 
                 <p>
-                    <strong>N</strong>: Unidade de força, o newton
+                    <strong>\(N\)</strong>: Unidade de força, o newton \(N\)
                 </p>
 
                 <p>
-                    <strong>M</strong>: Massa do corpo central (Kg)
+                    <strong>\(M\)</strong>: Massa do corpo central (Kg)
                 </p>
 
                 <p>
-                    <strong>Δv</strong>: Variação de velocidade, o diferencial da velocidade inicial e final
+                    <strong>\( \Delta v\)</strong>: Variação de velocidade, o diferencial da velocidade inicial e final
                 </p>
 
                 <p>
-                    <strong>Isp</strong>: Impulso específico, medido em segundos<br>Indica a eficiência do motor: quanto maior, melhor ele usará o combustível
+                    <strong>\(I_{sp}\)</strong>: Impulso específico, medido em segundos<br>Indica a eficiência do motor: quanto maior, melhor ele usará o combustível
                 </p>
 
                 <p>
-                    <strong>g</strong>: Gravidade Padrão, é a aceleração da gravidade na superfície da Terra, aproximadamente 9.81 m/s²
+                    <strong>\(g\)</strong>: Gravidade Padrão, é a aceleração da gravidade na superfície da Terra, aproximadamente 9.81 m/s²
                 </p>
 
                 <p>
-                    <strong>ln</strong>: Logaritmo natural, logarítimo na base <strong>e aproximadamente 2.718</strong>. Ele aparece pois a massa do 
+                    <strong>\(ln\)</strong>: Logaritmo natural, logarítimo na base <strong>\(e\) aproximadamente 2.718</strong>. Ele aparece pois a massa do 
                 foguete diminui conforme o combustível é queimado
                 </p>
 
                 <p>
-                    <strong>m₀</strong>: Massa inicial do foguete, incluindo combustível e carga útil
+                    <strong>\(m_0\)</strong>: Massa inicial do foguete, incluindo combustível e carga útil
                 </p>
 
                 <p>
-                    <strong>mf</strong>: Massa final do foguete, incluindo a carga útil e excluindo o combustível
+                    <strong>\(m_f\)</strong>: Massa final do foguete, incluindo a carga útil e excluindo o combustível
                 </p>
             </div>
         </section>
@@ -191,27 +199,101 @@
                 <ul>
                     <li id="relatividade-especial"><strong>Relatividade especial (restrita):</strong> O limite da velocidade</li>
                 </ul>
-                <p>Proposta por <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" target="__blank" class="cc">Albert Einstein</a> em 1905, ela revela que o 
-                espaço e o tempo não são absolutos. Quando um objeto se move a velocidades próximas à da luz (c = 299.792.458 m/s), seus atributos físicos mudam de 
-                forma significativa, e fenômenos estranhos aconecem: o tempo passa mais devagar para esse objeto em relação a um observador em repouso (dilatação temporal) 
-                e seu compprimento encurta na direção do movimento (contração espacial).S</p>
+                <p>
+                    A Teoria da Relatividade Especial, ou Teoria da Relatividade Restrita, proposta por <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" class="cc">Albert Einstein</a>, 
+                    descreve o comportamento do espaço e do tempo em velocidades muito altas, próximas à velocidade da luz.<br>
+                    Ele se baseia em dois princípios fundamentais:
+                </p>
                 <ul>
-                    <li><strong>A famosa equação:</strong> $$ E = mc^2 $$ Ela mostra que a massa e energia são equivalentes. Uma pequena quantidade de massa pode ser convertida
-                     em uma grande quantidade de energia.</li>
+                    <li>
+                        As leis da física são as mesmas para todos os observadores
+                    </li>
+                    <li>                            A velocidade da luz (\(c)\) é constante
+                    </li>
                 </ul>
+                <p>
+                    Uma das consequências mais importantes é a dilatação temporal:<br>
+                    Isso significa que quanto maior a velocidade um objeto, mais lento o tempo se passa para ele 
+                    em relação a um observador em repouso.<br>Outra consequência é a equivlência entre massa e energia:<br>
+                    Essa equação mostra que a massa pode ser convertida em energia, sendo fundamental em diversas 
+                    áreas da física.
+                </p>
                 <hr>
                 <ul>
                     <li id="relatividade-geral"><strong>Relatividade geral:</strong> Curvatura do espaço-tempo</li>
                 </ul>
+                <p>A Relatividade Geral é uma teoria desenvolvida por <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" class="cc">Albert Einstein</a> 
+                    que descreve como a gravidade funciona de uma maneira completamente diferente da visão clássica.<br><br>Ao contrário 
+                    da ideia tradicional, onde a gravidade é uma força que puxa objetos uns em direção aos outros, a Relatividade Geral 
+                    propõe que a gravidade é, na verdade, uma consequência da <strong>curvatura do espaço-tempo</strong>.<br>
+                    O espaço e o tempo não são separados, eles formam uma única estrutura chamada <strong>espaço-tempo</strong>. Quando um 
+                    objeto com massa está presente, ele deforma essa estrutura ao seu redor. Quanto maior a massa, maior essa deformação.
+                    <br><br>Um jeito simples de imaginar isso é pensar em uma superfície elástica: se colocarmos uma esfera pesada sobre ela, 
+                    a superfície se curva. Se uma esfera menor passar por perto, ela não é diretamente puxada, mas segue o caminho curvo 
+                    criado pela deformação.<br><br>Da mesma forma, planetas orbitam estrelas não porque estão sendo puxados por uma 
+                    força invisível, mas porque estão seguindo a curvatura do espaço-tempo ao redor deles.
+                </p>
+                <ul>
+                    <li id="dilatacao-temporal"><strong>Dilatação Temporal</strong></li>
+                </ul>
+                <p>
+                    Uma das consequências mais interessantes da Relatividade Geral é a chamada <strong>Dilatação Temporal</strong>.<br><br>
+                    Isso significa que o tempo não passa igual em todos os lugares. Em regiões onde a gravidade é mais intensa, 
+                    o tempo passa mais lentamente em comparação com regiões onde a gravidade é mais fraca.<br><br>
+                    Por exemplo, um relógio próximo a um objeto muito massivo vai marcar o tempo mais devagar do que um relógio distante dele.
+                    <br><br>Para objetos em alta velocidade, a dilatação temporal também pode ser descrita pela equação no quadro de equações abaixo.<br>
+                    Quanto mais próxima da velocidade da luz o objeto estiver, mais lentamente o tempo passará para ele.
+                </p>
                 <ul>
                     <li id="buracos-negros"><strong>Buracos negros:</strong> Singularidades e horizontes de eventos</li>
                 </ul>
+                <p>
+                    Os Buracos Negros são uma das previsões mais extremas da Relatividade Geral.<br><br>
+                    Eles se formam quando uma enorme quantidade de massa se concentra em um espaço muito pequeno, causando uma curvatura no 
+                    espaço-tempo tão intensa que nada, nem mesmo a luz, consegue escapar.<br><br>
+                    Ao redor de um buraco negro existe uma região chamada <strong>Horizonte de Eventos</strong>. Esse é o limite a partir 
+                    do qual não há retorno, qualquer coisa que o atravessar nunca mais sairá.<br><br>
+                    Além disso, o efeito da dilatação temporal se torna mais muito mais intenso próximo a um buraco negro. Para um 
+                    observador distante, o tempo parece quase "parar" para algo que se aproxima do horizonte de eventos.<br><br>
+                    <strong>Espaguetificação:</strong> Um dos efeitos mais extremos, ocorre porque a gravidade varia muito entre diferentes partes 
+                    de um objeto próximo a um buraco negro. Por exemplo, seus pés seriam puxados com mais força que sua cabeça. 
+                    Esse alongamento extremo pode esticar objetos até que se desintegrem.<br>
+                    <strong>Singularidade:</strong> No centro do buraco negro existe a chamada singularidade. esse é um pondo onde a 
+                    densidade tende ao infinito e as leis da física deixam de funcionar.<br> Ainda não há uma teoria completa que 
+                    descreva exatamente o que pode acontecer lá.<br><br>
+                    Esses objetos mostram até onde as leis da física podem ser levadas em condições extremas, sendo fundamental 
+                    para o estudo do universo.
+                </p>
             </div>
             <!-- Cálculos e Fórmulas -->
             <div class="subsecao">
                 <h4>Cálculos e Fórmulas</h4>
-                <p><strong>Equivalência massa-energia:<br></strong> $$ E = mc^2 $$</p>
-                <p><strong>Dilatação do tempo:<br></strong> $$ t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} $$</p>
+                <p><strong>Equivalência massa-energia:<br></strong> \[ E = mc^2 \]</p>
+                <p><strong>Dilatação Temporal:<br></strong> \[ t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \]</p>
+            </div>
+            <div class="explicacao">
+                <h3>Glossário</h3>
+                <p>
+                    <strong>\(E\) (Energia): </strong>A energia total contida no objeto, medida em Joules (\(J\))
+                </p>
+                <p>
+                    <strong>\(m\) (Massa): </strong>A massa do objeto em repouso, medida em quiligramas (Kg)
+                </p>
+                <p>
+                    <strong>\(c\) (Velocidade da Luz): </strong>Uma constante universal. No vácuo, é de 299.792.458m/s, aproximadamente 
+                    300.000Km/s (ou \(3 \cdot {10^8}m/s\)). Como ela é elevada ao quadrado (\(c^2\)), uma quantidade pequena 
+                    de massa gera uma grande quantidade de energia.
+                </p>
+                <p>
+                    <strong>\(t\) (Tempo relatado): </strong>O intervalo de tempo medido por um observador em repouso 
+                    (o tempo que "passou mais").
+                </p>
+                <p>
+                    <strong>\(t_0\) (Tempo próprio): </strong>O intervalo de tempo medido por quem está dentro do movimento.
+                </p>
+                <p>
+                    <strong>\(v\) (Velocidade): </strong>A velocidade com que o objeto etá se movendo.
+                </p>
             </div>
         </section>
     </main>
