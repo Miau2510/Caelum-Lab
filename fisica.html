@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<!-- Informações invisíveis para o navegador -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Cabeçalho e Menu de Navegação -->
     <header>
         <h1>Caelum Lab</h1>
         <nav>
@@ -21,10 +23,11 @@
         </nav>
     </header>
         <main class="container">
+            <!-- Texto do início da página (antes do Ir para: )-->
         <h2>Conceitos de Física Espacial</h2>
         <p>Explore os fundamentos da física que governam o movimento e exploração espacial.</p>
 
-        <!-- ÍNDICE DE NAVEGAÇÃO -->
+        <!-- Navegação entre partes da página -->
         <nav class="indice">
             <h3>Ir para:</h3>
             <ul>
@@ -36,66 +39,175 @@
                 <hr>
                 <li><a href="#atmosfera">Atmosferas</a></li>
                 <hr>
-                <li><a href="#relatividade-especial">Relatividade especial</a></li>
+                <li><a href="#relatividade-especial">Relatividade especial (restrita)</a></li>
                 <hr>
                 <li><a href="#relatividade-geral">Relatividade geral</a></li>
                 <hr>
                 <li><a href="#buracos-negros">Buracos negros</a></li>
+                <hr>
+                <li><a href="#balistica-e-trajetorias">Balística e Trajetórias</a></li>
             </ul>
         </nav>
 
-        <!-- SEÇÃO FÍSICA CLÁSSICA -->
+        <!-- Física Clássica -->
         <section class="secao-fisica">
             <h3>Física Clássica</h3>
-            
+            <!-- Conceitos -->
             <div class="subsecao">
-                <h4>Teoria</h4>
+                <h4>Conceitos</h4>
                 <ul>
                     <li id="gravitacao"><strong>Gravitação:</strong> Lei da gravitação universal de Newton</li>
-                    <li id="orbitas"><strong>Órbitas:</strong> Movimentos circulares e elípticos</li>
-                    <li id="foguetes"><strong>Mecânica de foguetes:</strong> Impulso específico e delta-v</li>
-                    <li id="atmosfera"><strong>Atmosferas:</strong> Reentrada e arrasto</li>
                 </ul>
+                <p>A gravitação é a força de atração que age entre todos os corpos com massa. Segundo a Lei da Gravitação Universal de 
+                    <a href="https://pt.wikipedia.org/wiki/Isaac_Newton" target="__blank" class="cc">Isaac Newton</a>, 
+                    essa força é diretamente proporcional ao produto das massas e é inversamente proporcional ao quadrado da distância entre elas.<br>
+                    É ela que mantém a Lua em órbita e impede que a atmosfera terrestre escape para o vácuo.
+                </p>
+                <ul>
+                    <li><strong>Curiosidade:</strong></li>
+                </ul>
+                <p>
+                    Mesmo no vácuo do espaço, a gravidade ainda está presente. Os astronautas na Estação Espacial Internacional não flutuam porque a gravidade sumiu, 
+                    mas estão em queda livre perpétua ao redor da Terra. Isso é o que é chamado de Micro Gravidade.
+                </p>
+                <hr>
+                <ul>
+                    <li id="orbitas"><strong>Órbitas:</strong> O equilíbio da Queda Livre</li>
+                </ul>
+                <p>
+                    Uma órbita ocorre quando um objeto possui uma velocidade horizontal sufciente para que, ao cair em direção ao corpo central, 
+                    a curvatura da queda acompanhe a curvatura do corpo abaixo. Assim, o objeto "cai" continuamente ao redor do corpo central, 
+                    criando uma trajetória fechada. A velocidade necessária para manter uma órbita depende da altitude e da massa do corpo central.
+                </p>
+                <ul>
+                    <li><strong>Órbita Circular:</strong> Possui velocidade constante e altitude fixa.</li>
+                    <br>
+                    <li><strong>Órbita Elíptica:</strong> A velocidade e altitude variam entre o ponto mais próximo e o mais distante da órbita 
+                        (o nome dado ao ponto mais próximo e distante varia de acordo com o corpo central).</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li id="foguetes"><strong>Mecânica de foguetes:</strong> Ação e reação</li>
+                </ul>
+                <p>
+                    Baseada na Terceira Lei de Newton, a propulsão de um foguete não depende de um meio externo, como "empurrar o ar", mas sim da conservação
+                    do momento linear. Ao expelir massa (gases de exaustão do propelente) em alta veloxidade para trás, o foguete recebe um impulso equivalente para frente. 
+                    A eficiência do foguete é medida pelo impulso específico (Isp), que indica quanto impulso é gerado por unidade de massa de propelente consumida. O TWR 
+                    (Thrust-to-Weight Ratio) é a relação entre a força de empuxo do foguete e seu peso, indicando sua razão de empuxo/peso em relação a gravidade de um corpo.
+                </p>
+                <ul>
+                    <li id="atmosfera"><strong>Atmosferas:</strong> O desafio do arrasto e calor</li>
+                </ul>
+                <p>A atmosfera é um fluido denso que oferece resistência ao movimento (arrasto) e gera calor com o atrito. Para a exploração espacial, 
+                    ela apresenta dois desafios principais: o arrasto, que éa força que se opõe ao movimento do foguere, fazendo mais energia ser necessária para o lançamento, 
+                    e o aquecimento por atrito, especialmente na reentrada, que ao retornar do espaço, a compressão do ar à frente da nave gera atrito, e atrito gera calor, 
+                    transformando energia cinética em térmica. É necessário um escudo de calor para sobreviver a esse processo.
+                </p>
+                <hr>
+                <ul>
+                    <li id="balistica-e-trajetorias"><strong>Balística e Trajetórias</strong></li>
+                </ul>
+                <p>Estuda o movimento de corpos lançados ao espaço sob influência exclusiva da gravidade e da resistência do ar. No espaço, uma vez que o motor é desligado, 
+                    o objeto segue uma cônica (círculo, epípse, parábola ou hipérbole) determinada pela sua energia total. A trajetória é influenciada por fatores como a 
+                    velocidade de lançamento, o ângulo de lançamento, a altitude e a presença de corpos celestes próximos.
+                </p>
+                <hr>
             </div>
-            
+            <!-- Cálculos e Fórmulas -->
             <div class="subsecao">
                 <h4>Cálculos e Fórmulas</h4>
                 <p><strong>Força Gravitacional:<br></strong> $$ F = G \frac{m_1 m_2}{r^2} $$</p>
                 <p><strong>Velocidade orbital:<br></strong> $$ v = \sqrt{\frac{GM}{r}} $$</p>
-                <p><strong>Delta-v:<br></strong> $$ \Delta v = I_{sp} \cdot g_0 \cdot \ln \left(\frac{m_0}{m_f}\right) $$</p>
+                <p><strong>Delta-v (∆v):<br></strong> $$ \Delta v = I_{sp} \cdot g_0 \cdot \ln \left(\frac{m_0}{m_f}\right) $$</p>
             </div>
+            <!-- Glossário -->
             <div p class="explicacao">
                 <h3>Glossário</h3>
-                <p><strong>F</strong>: é a força gravitacional entre dois corpos com massa, medido em <strong>Newton (N)</strong></p>
-                <p><strong>m₁</strong>: Massa do primeiro corpo</p>
-                <p><strong>m₂</strong>: Massa do segundo corpo</p>
-                <p><strong>r</strong>: Distância entre os centros dos corpos, medida em <strong>metros (m)</strong></p>
-                <p><strong>v</strong>: Velocidade orbital do objeto <strong>(m/s)</strong></p>
-                <p><strong>G</strong>: Constante gravitacional universal, aproximadamente 6.674 × 10⁻¹¹ N⋅m²/kg²</p>
-                <p><strong>N</strong>: Unidade de força, o newton</p>
-                <p><strong>M</strong>: Massa do corpo central (Kg)</p>
-                <p><strong>Δv</strong>: Variação de velocidade, o diferencial da velocidade inicial e final</p>
-                <p><strong>Isp</strong>: Impulso específico, medido em segundos<br>Indica a eficiência do motor: quanto maior, melhor ele usará o combustível</p>
-                <p><strong>g</strong>: Gravidade Padrão, é a aceleração da gravidade na superfície da Terra, aproximadamente 9.81 m/s²</p>
-                <p><strong>ln</strong>: Logaritmo natural, logarítimo na base <strong>e aproximadamente 2.718</strong>. Ele aparece pois a massa do foguete diminui conforme o combustível é queimado</p>
-                <p><strong>m₀</strong>: Massa inicial do foguete, incluindo combustível e carga útil</p>
-                <p><strong>mf</strong>: Massa final do foguete, incluindo a carga útil e excluindo o combustível</p>
+                <p>
+                    <strong>F</strong>: é a força gravitacional entre dois corpos com massa, medido em <strong>Newton (N)</strong>
+                </p>
+
+                <p>
+                    <strong>m₁</strong>: Massa do primeiro corpo
+                </p>
+
+                <p>
+                    <strong>m₂</strong>: Massa do segundo corpo
+                </p>
+
+                <p>
+                    <strong>r</strong>: Distância entre os centros dos corpos, medida em <strong>metros (m)</strong>
+                </p>
+
+                <p>
+                    <strong>v</strong>: Velocidade orbital do objeto <strong>(m/s)</strong>
+                </p>
+
+                <p>
+                    <strong>G</strong>: Constante gravitacional universal, aproximadamente 6.674 × 10⁻¹¹ N⋅m²/kg²
+                </p>
+
+                <p>
+                    <strong>N</strong>: Unidade de força, o newton
+                </p>
+
+                <p>
+                    <strong>M</strong>: Massa do corpo central (Kg)
+                </p>
+
+                <p>
+                    <strong>Δv</strong>: Variação de velocidade, o diferencial da velocidade inicial e final
+                </p>
+
+                <p>
+                    <strong>Isp</strong>: Impulso específico, medido em segundos<br>Indica a eficiência do motor: quanto maior, melhor ele usará o combustível
+                </p>
+
+                <p>
+                    <strong>g</strong>: Gravidade Padrão, é a aceleração da gravidade na superfície da Terra, aproximadamente 9.81 m/s²
+                </p>
+
+                <p>
+                    <strong>ln</strong>: Logaritmo natural, logarítimo na base <strong>e aproximadamente 2.718</strong>. Ele aparece pois a massa do 
+                foguete diminui conforme o combustível é queimado
+                </p>
+
+                <p>
+                    <strong>m₀</strong>: Massa inicial do foguete, incluindo combustível e carga útil
+                </p>
+
+                <p>
+                    <strong>mf</strong>: Massa final do foguete, incluindo a carga útil e excluindo o combustível
+                </p>
             </div>
         </section>
 
-        <!-- SEÇÃO FÍSICA RELATIVÍSTICA -->
+        <!-- Física Relativística -->
         <section class="secao-fisica">
             <h3>Física Relativística</h3>
-            
+            <!-- Conceitos -->
             <div class="subsecao">
-                <h4>Teoria</h4>
+                <h4>Conceitos</h4>
                 <ul>
-                    <li id="relatividade-especial"><strong>Relatividade especial:</strong> Efeitos a altas velocidades</li>
+                    <li id="relatividade-especial"><strong>Relatividade especial (restrita):</strong> O limite da velocidade</li>
+                </ul>
+                <p>Proposta por <a href="https://pt.wikipedia.org/wiki/Albert_Einstein" target="__blank" class="cc">Albert Einstein</a> em 1905, ela revela que o 
+                espaço e o tempo não são absolutos. Quando um objeto se move a velocidades próximas à da luz (c = 299.792.458 m/s), seus atributos físicos mudam de 
+                forma significativa, e fenômenos estranhos aconecem: o tempo passa mais devagar para esse objeto em relação a um observador em repouso (dilatação temporal) 
+                e seu compprimento encurta na direção do movimento (contração espacial).S</p>
+                <ul>
+                    <li><strong>A famosa equação:</strong> $$ E = mc^2 $$ Ela mostra que a massa e energia são equivalentes. Uma pequena quantidade de massa pode ser convertida
+                     em uma grande quantidade de energia.</li>
+                </ul>
+                <hr>
+                <ul>
                     <li id="relatividade-geral"><strong>Relatividade geral:</strong> Curvatura do espaço-tempo</li>
+                </ul>
+                <ul>
                     <li id="buracos-negros"><strong>Buracos negros:</strong> Singularidades e horizontes de eventos</li>
                 </ul>
             </div>
-            
+            <!-- Cálculos e Fórmulas -->
             <div class="subsecao">
                 <h4>Cálculos e Fórmulas</h4>
                 <p><strong>Equivalência massa-energia:<br></strong> $$ E = mc^2 $$</p>
@@ -103,7 +215,7 @@
             </div>
         </section>
     </main>
-
+    <!-- Rodapé e licença -->
     <footer>
         <a href="license.html">© 2026 Caelum Lab. CC BY-NC-SA 4.0</a>
     </footer>
