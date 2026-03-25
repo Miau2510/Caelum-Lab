@@ -1,0 +1,44 @@
+.caixa-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #754671;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(125, 15, 255, 0.1);
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.75; /* Necessário para Firefox, que coloca transparência padrão */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.botao-calcular {
+    background-color: #42184e;
+    color: rgba(255, 255, 255, 0.562);
+    padding: 10px 20px;
+    border: 1px solid #754671;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.botao-calcular:hover {
+    background-color: #754671;
+    color: rgba(255, 255, 255, 0.75);
+}

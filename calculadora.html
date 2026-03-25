@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caelum Lab - Calculadora</title>
     
+    <link rel="stylesheet" href="caixas-calculadora.css">
     <link rel="stylesheet" href="style.css">
 
+    <script src="calculadora.js"></script>
     <script src="mathconfig.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
@@ -27,8 +29,42 @@
          <h2>Calculadoras</h2>
         <h3>Aqui você pode calcular rapidamente de acordo com as fórmulas que conheceu em <a href="fisica.html" class="cc">Física</a></h3>
         <br>
-        <br>
-        
+        <hr>
+        <!-- Força Gravitacional -->
+        <h4>Força Gravitacional</h4>
+        <input type="number" id="massa1" class="caixa-input" placeholder="Massa 1 (kg)">
+        <input type="number" id="massa2" class="caixa-input" placeholder="Massa 2 (kg)">
+        <input type="number" id="distancia" class="caixa-input" placeholder="Distância (m)">
+        <button onclick="calcularForcaGravitacional()" class="botao-calcular">Calcular</button>
+        <p id="forca-gravitacional">F = 0 N</p>
+        <hr>
+        <!-- Velocidade Orbital -->
+        <h4>Velocidade Orbital</h4>
+        <input type="number" id="massaCentral" class="caixa-input" placeholder="Massa Central (kg)">
+        <input type="number" id="raioOrbital" class="caixa-input" placeholder="Raio Orbital (m)">
+        <button onclick="calcularVelocidadeOrbital()" class="botao-calcular">Calcular</button>
+        <p id="velocidade-orbital">v = 0m/s</p>
+        <hr>
+        <!-- Delta-v -->
+        <h4>Delta-v (\(\Delta v\))</h4>
+        <input type="number" id="isp" class="caixa-input" placeholder="Isp (s)">
+        <input type="number" id="massaInicial" class="caixa-input" placeholder="Massa Inicial (kg)">
+        <input type="number" id="massaFinal" class="caixa-input" placeholder="Massa Final (kg)">
+        <button onclick="calcularDeltaV()" class="botao-calcular">Calcular</button>
+        <p id="delta-v">∆v = 0 m/s</p>
+        <hr>
+        <!-- Equivalência Massa-Energia -->
+        <h4>Equivalência Massa-Energia</h4>
+        <input type="number" id="massa" class="caixa-input" placeholder="Massa (kg)">
+        <button onclick="calcularEquivalenciaMassaEnergia()" class="botao-calcular">Calcular</button>
+        <p id="equivalencia-massa-energia">E = 0 J</p>
+        <hr>
+        <!-- Dilatação Temporal -->
+        <h4>Dilatação Temporal</h4>
+        <input type="number" id="tempoProprio" class="caixa-input" placeholder="Tempo Próprio (s)">
+        <input type="number" id="velocidadeRelativa" class="caixa-input" placeholder="Velocidade Relativa (m/s)">
+        <button onclick="calcularDilacaoTemporal()" class="botao-calcular">Calcular</button>
+        <p id="dilacao-temporal">t = 0 s</p>
     </main>
 
     <script src="animacoes.js"></script>
