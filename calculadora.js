@@ -9,6 +9,21 @@ function calcularForcaGravitacional() {
     document.getElementById("forca-gravitacional").textContent = "F = " + forca.toExponential(2) + " N";
 }
 
+function lerJoules(J) {
+    if (J < 0) {
+        return 0 + " J";
+    }
+    if (J >= 1e9) {
+        return (J / 1e9).toFixed(2) + " GJ";
+    } else if (J >= 1e6) {
+        return (J / 1e6).toFixed(2) + " MJ";
+    } else if (J >= 1e3) {
+        return (J / 1e3).toFixed(2) + " kJ";
+    } else {
+        return J.toFixed(2) + " J";
+    }
+}
+
 // Calcular Velocidade Orbital
 function calcularVelocidadeOrbital() {
     const G = 6.67430e-11; // Constante gravitacional
@@ -33,7 +48,7 @@ function calcularEquivalenciaMassaEnergia() {
     const c = 299792458; // Velocidade da luz em m/s
     let massa = parseFloat(document.getElementById('massa').value);
     let energia = massa * c * c;
-    document.getElementById("equivalencia-massa-energia").textContent = "E = " + energia.toExponential(2) + " J";
+    document.getElementById("equivalencia-massa-energia").textContent = `E = ${lerJoules(energia)}`;
 }
 
 // Calcular dilatação temporal

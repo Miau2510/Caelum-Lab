@@ -27,7 +27,6 @@ https://miau2510.github.io/Caelum-Lab/
 
 O objetivo do Caelum Lab é tornar conceitos de física e exploração espacial mais acessíveis, especialmente para pessoas que:
 
-- gostam de jogos espaciais
 - querem entender como foguetes e órbitas funcionam
 - procuram conteúdo em português sobre esses temas
 

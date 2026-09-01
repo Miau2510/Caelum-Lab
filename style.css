@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Estilo simples para a estrutura básica */
 html, body {
     min-height: 100vh;
@@ -10,6 +14,8 @@ html, body {
 
     background: radial-gradient(circle at top, #0b173b, #000) no-repeat fixed;
     background-size: cover;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -170,10 +176,20 @@ footer a:hover {
 
     text-decoration: none;
     border-radius: 6px;
+
+    transition: all 0.15s ease-in-out;
 }
 
 .canal-botao:hover {
     background: #cc0000;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: rgba(84, 56, 88, 0.692)  1px 3px 3px;
+}
+
+.canal-botao:active {
+    background: #aa0000;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(84, 56, 88, 0.692)  1px 2px 2px;
 }
 
 /* Animação de entrada suave */
@@ -310,4 +326,15 @@ nav a:hover {
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+[id] {
+  scroll-margin-top: 80px; /* Use a altura do seu menu */
 }
