@@ -60,4 +60,5 @@ Este projeto foi desenvolvido utilizando:
 
 # 🚀 Autor
 
-### Projeto criado por Miguel.
+### Projeto criado por:
+## Miguel Celestino
